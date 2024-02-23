@@ -18,7 +18,7 @@ for (let i=0; i < listmail.length; i++){
 }
 
 if (isValidData){
-  document.getElementById('mailbox').innerHTML = 'La mail inserita è corretta. Adesso puoi giocare ai dadi.'
+  document.getElementById('mailbox').innerHTML = 'La mail inserita è corretta. <br> Adesso puoi giocare ai dadi.'
 }else{
   alert('Email inserita non presente nel sistema. Riprovare');
   document.getElementById('mailbox').innerHTML = 'La mail inserita non è corretta.'
@@ -42,7 +42,7 @@ btn.addEventListener('click', function(){
   if (dicepc > diceuser){
     document.getElementById('resulte').innerHTML = 'Ha vinto il PC!'
   }else if (diceuser > dicepc){
-    document.getElementById('resulte').innerHTML = 'Hai vinto!'
+    document.getElementById('resulte').innerHTML = 'Hai vinto User!'
   }else if (dicepc == diceuser){
     document.getElementById('resulte').innerHTML = 'Il risultato è pari'
   }

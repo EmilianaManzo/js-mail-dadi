@@ -15,35 +15,39 @@
 
 
   <!-- Style -->
-
+  <link rel="stylesheet" href="assets/css/style.css">
 
   
   <title>Mail Dadi</title>
 </head>
 <body>
-  <h1>Mail e Dadi</h1>
-  <div id="mailbox"></div>
 
-  <div class="bottom">
-    <h3>Gioco dei dadi</h3>
+  <div class="container">
+    <h1  class="text-center">Mail e Dadi</h1>
+    <h3 class="text-center my-4">Mail</h3>
+    <div id="mailbox" class="mailbox"></div>
   
-    <div class="d-flex ">
-      <div class="gamer m-3 " >
-        <p>Numero User:</p>
-        <p id="diceuser"></p>
+    <div class="bottom">
+      <h3 class="text-center my-5 ">Gioco dei dadi</h3>
+    
+      <div class="d-flex justify-content-around  align-items-center ">
+        <div class="gamer m-3  " >
+          <p class="text-center">Numero User:</p>
+          <p id="diceuser" class="text-center"></p>
+        </div>
+        <div class="pc m-3">
+          <p class="text-center">Numero User:</p>
+          <p id="dicepc" class="text-center"></p>
+        </div>
+        <div class="resulte m-3">
+          <p class="text-center">Risultato:</p>
+          <p id="resulte" class="text-center"></p>
+        </div>
       </div>
-      <div class="pc m-3">
-        <p>Numero User:</p>
-        <p id="dicepc"></p>
-      </div>
-      <div class="resulte m-3">
-        <p>Risultato:</p>
-        <p id="resulte"></p>
-      </div>
+      <button type="button" class="btn btn-danger btn-lg m-5 fw-bold  ">SPIN</button>
     </div>
-    <button type="button" class="btn btn-danger m-3 ">Gioca</button>
+    
   </div>
-  
   
   
 

@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgba(47, 125, 242,.6);
+  color: white;
+}
+
+h1{
+  font-size: 4rem;
+  color: red;
+}
+
+h3{
+  font-size: 2rem;
+  background-color: red;
+}
+
+.container{
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.mailbox,
+.bottom{
+  font-size: 1.5rem;
+  text-align: center;
+}
