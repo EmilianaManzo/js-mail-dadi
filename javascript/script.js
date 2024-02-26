@@ -4,7 +4,7 @@ const listmail = ['emy@libero.it', 'giulio@gmail.com', 'emy3@gmail.com', 'boolea
 console.log(listmail);
 
 let mailUtente = prompt('Inserisci la tua email');
-let isValidData = false
+let findMail = false
 
 // variabile add class 
 const bottom = document.querySelector('.bottom');
@@ -13,11 +13,11 @@ const bottom = document.querySelector('.bottom');
 for (let i=0; i < listmail.length; i++){
   console.log(i);
   if (mailUtente == listmail[i]){
-    isValidData = true
+    findMail = true
   }
 }
 
-if (isValidData){
+if (findMail){
   document.getElementById('mailbox').innerHTML = 'La mail inserita è corretta. <br> Adesso puoi giocare ai dadi.'
 }else{
   alert('Email inserita non presente nel sistema. Riprovare');
